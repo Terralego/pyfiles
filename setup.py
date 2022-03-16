@@ -38,7 +38,7 @@ setup(
     long_description=readme + "\n\n" + history,
     include_package_data=True,
     keywords="store storage api cli big files",
-    name="bygfiles",
+    name="pyfiles",
     entry_points={"console_scripts": [
         "pyfiles = pyfiles.commands:run.start",
         "bygfiles = bygfiles.commands:run.start"
