@@ -30,6 +30,7 @@ setup(
         "Programming Language :: Python :: 3.5",
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
     ],
     description="Big file collection manager",
     install_requires=requirements,
@@ -47,5 +48,4 @@ setup(
     tests_require=test_requirements,
     url="https://github.com/Terralego/pyfiles",
     version="0.1.1+dev",
-    zip_safe=False,
 )
