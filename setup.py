@@ -13,9 +13,7 @@ with open("HISTORY.rst") as history_file:
 
 requirements = ["begins", "boto3", "sanic", "aiohttp"]
 
-setup_requirements = ["pytest-runner"]
-
-test_requirements = ["pytest"]
+test_requirements = ["pytest", "pytest-runner"]
 
 setup(
     author="Jeremie Pardou",
@@ -44,11 +42,10 @@ setup(
         "pyfiles = pyfiles.commands:run.start",
         "bygfiles = bygfiles.commands:run.start"
     ]},
-    packages=find_packages(include=["pyfiles", "pyfiles.storages", "bygfiles", "bygfiles.storages"]),
-    setup_requires=setup_requirements,
+    packages=find_packages(),
     test_suite="tests",
     tests_require=test_requirements,
-    url="https://github.com/jrmi/pyfiles",
-    version="0.1.1",
+    url="https://github.com/Terralego/pyfiles",
+    version="0.1.1+dev",
     zip_safe=False,
 )
